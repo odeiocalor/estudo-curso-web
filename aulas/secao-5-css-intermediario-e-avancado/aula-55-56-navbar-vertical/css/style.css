@@ -36,3 +36,12 @@ ul a:hover {
     color: #ffffff;
 }
 
+#home .navegacao-principal .home a,
+#sobre .navegacao-principal .sobre a,
+#servicos .navegacao-principal .servicos a,
+#noticias .navegacao-principal .noticias a,
+#contato .navegacao-principal .contato a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #ffffff;
+}
