@@ -1,0 +1,158 @@
+body {
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #e6e6e6;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #f7b600;
+}
+
+.clear {
+    clear: both;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Header Styles */
+
+header h1 {
+    color: #4e4e4e;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+header h1 .logo-branco {
+    color: #ffffff;
+}
+
+header a {
+    font-weight: bold;
+    padding: 15px;
+    text-decoration: none;
+}
+
+header a:link, header a:visited {
+    color: #ffffff;
+    
+}
+
+header a:hover {
+    color: #f7b600;
+    background-color: #ffffff;
+}
+
+header .area-cabecalho {
+    background-color: #f7b600;
+    padding: 15px;
+    text-align: center;
+}
+
+header .area-logo, .area-menu{
+    padding: 10px;
+}
+
+/* Main Styles*/
+
+main .area-principal {
+    width: 920px;
+    margin: 0 auto;
+}
+
+main .area-postagens, .area-lateral {
+    background: #ffffff;
+    margin: 20px 0;
+}
+
+main .area-postagens {
+    width: 640px;
+    float: left;
+}
+
+main .area-postagens .postagem {
+    padding: 20px;
+}
+
+main .area-postagens .postagem h2 {
+    color: #f7b600;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+main .area-postagens .postagem img {
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+main .area-postagens .postagem p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+main .area-postagens .postagem a:hover, main .area-lateral a:hover {
+    color: #f7b500b9;
+}
+
+main .area-postagens .postagem .data-postagem {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-bottom: 2px solid #f4f4f4;
+    margin-bottom: 20px;
+}
+
+main .area-postagens .postagem .leia-mais, main .area-lateral .postagem-lateral a {
+    font-weight: bold;
+    font-style: italic;
+}
+
+main .area-postagens .postagem .borda-fim-post {
+    display: block;
+    padding-top: 10px;
+    border-bottom: 2px solid #4e4e4e;
+}
+
+main .area-lateral {
+    width: 240px;
+    float: right;
+}
+
+main .area-lateral .conteudo-lateral {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+main .area-lateral .conteudo-lateral h3 {
+    color: #565656;
+    background: #cccccc;
+    padding: 5px;
+}
+
+main .area-lateral .conteudo-lateral .postagem-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted #cccccc;
+}
+
+main .area-lateral .conteudo-lateral .texto-lateral p {
+    text-align: justify;
+}
+
+/* Footer Styles */
+
+footer .copyright {
+    text-align: center;
+    padding: 15px;
+    color: #ffffff;
+    background-color: #cccccc;
+}
