@@ -1,0 +1,49 @@
+/* li {
+    padding: 5px 20px;
+    background: url(../img/seta.png) no-repeat left center;
+} */
+
+h1, h2, h3, p, a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 720px;
+    background: #159cb0 url(../img/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+
+ul li {
+    float: left;
+}
+
+ul a {
+    display: block;
+    padding: 0 2em;
+    line-height: 2em;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    background: url(../img/divisor.png) repeat-y left top;
+}
+
+ul .primeiro a {
+    background: none;
+}
+
+ul a:hover {
+    color: #085662;
+    background: #44cade;
+}
+
+#home .navegacao-principal .home a,
+#sobre .navegacao-principal .sobre a,
+#servicos .navegacao-principal .servicos a,
+#noticias .navegacao-principal .noticias a,
+#contato .navegacao-principal .contato a {
+    color: #085662;
+    background: #44cade;
+}
