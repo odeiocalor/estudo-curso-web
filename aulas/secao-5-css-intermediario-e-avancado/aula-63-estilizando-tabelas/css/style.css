@@ -1,0 +1,32 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table {
+    width: 600px;
+}
+
+th, td {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    text-transform: uppercase;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #111111;
+    font-size: 90%;
+    letter-spacing: 0.1em;
+}
+
+tr.alternado {
+    background-color: #efefef;
+}
+
+tr:hover {
+    background-color: #c3e6e5;
+}
+
+.numero {
+    text-align: right;
+}
