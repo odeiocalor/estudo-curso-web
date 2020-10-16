@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form{
+    width: fit-content;
+}
+
+fieldset {
+    padding: 1em;
+    border: 1px solid #cccccc;
+    background: #f8f8f8;
+    margin: 1em 0;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+/* input[type="text"] {
+    width: 20em;
+} */
+
+input {
+    width: 20em;
+}
+
+textarea {
+    width: 20em;
+    height: 10em;
+    resize: none;
+    padding: 10px;
+}
+
+input.radio, input.checkbox, input.submit {
+    width: auto;
+}
+
+.radio {
+    margin-right: 1em;
+}
