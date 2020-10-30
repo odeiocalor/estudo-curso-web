@@ -14,11 +14,26 @@ ul {
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h2 {
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px 0;
+}
+
+p {
+    font-size: 1em;
+}
+
 .container {
     background: #ede9cc;
     margin: 0 auto;
     min-width: 740px;
     max-width: 1180px;
+    background: url(../img/bg-container.png) top center repeat-y;
 }
 
 header {
@@ -112,4 +127,67 @@ header .area-menu .conteudo-menu .menu .depoimento {
     width: 226px;
     height: 164px;
     float: right;
+}
+
+main {
+    width: 50%;
+    float: left;
+    background: url(../img/bg-area-principal.png) top left repeat-x;
+    padding: 15px 0;
+}
+
+main .conteudo h2, main .conteudo p {
+    margin-bottom: 0.7em;
+}
+
+side {
+    width: 50%;
+    float: right;
+    display: block;
+    background: url(../img/bg-area-lateral.png) top left repeat-x;
+    padding: 20px 0;
+}
+
+main .conteudo, side .conteudo {
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+side ul.beneficios li {
+    padding: 8px;
+    border-bottom: 1 solid #f3efcb;
+    height: 6em;
+}
+
+side ul.beneficios li a img {
+    width: 150px;
+    float: left;
+    margin-right: 8px;
+}
+
+side ul.beneficios li a h3 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #615b2d;
+    padding: 5px 0;
+    background: url(../img/ornamento.png) no-repeat center right;
+}
+
+side ul.beneficios li a p {
+    font-size: 0.8em;
+    color: #000000;
+}
+
+side ul.beneficios li:hover {
+    background: #f6f3d6;
+    cursor: pointer;
+}
+
+footer {
+    clear: both;
+    padding: 16px;
+    background: #ffffff url(../img/bg-rodape.png) repeat-x top;
+    color: #7d7640;
+    text-align: center;
 }
