@@ -1,0 +1,75 @@
+@keyframes animacao-caixa {
+    from {
+        background: red;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+    to {
+        background: green;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+/* @-webkit-keyframes animacao-caixa {
+    from {
+        background: red;
+    }
+    to {
+        background: green;
+    }
+}
+
+@-moz-keyframes animacao-caixa {
+    from {
+        background: red;
+    }
+    to {
+        background: green;
+    }
+}
+
+@-o-keyframes animacao-caixa {
+    from {
+        background: red;
+    }
+    to {
+        background: green;
+    }
+} */
+
+.caixa {
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: relative;
+    /* 
+    -webkit-animation-name: animacao-caixa;
+    -moz-animation-name: animacao-caixa;
+    -o-animation-name: animacao-caixa;
+    animation-name: animacao-caixa;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-iteration-count: 2;
+    -moz-animation-iteration-count: 2;
+    -o-animation-iteration-count: 2;
+    animation-iteration-count: 2;
+    -webkit-animation-direction: alternate; 
+    -moz-animation-direction: alternate; 
+    -o-animation-direction: alternate; 
+    animation-direction: alternate; 
+    */
+
+    -webkit-animation: animacao-caixa 5s 3s 2 alternate;
+    -moz-animation: animacao-caixa 5s 3s 2 alternate;
+    -o-animation: animacao-caixa 5s 3s 2 alternate;
+    animation: animacao-caixa 5s 3s 2 alternate;
+}
