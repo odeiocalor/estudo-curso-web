@@ -94,6 +94,12 @@ nav.navbar-cor {
         color: black;
 }
 
+/* Carousel */
+
+.carousel-control-next, .carousel-control-prev {
+        width: 5%;
+}
+
 /* Estrutura de Conteúdos */
 
 .caixa {
