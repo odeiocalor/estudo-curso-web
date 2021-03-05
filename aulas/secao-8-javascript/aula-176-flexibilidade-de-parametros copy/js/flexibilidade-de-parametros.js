@@ -1,6 +1,6 @@
 function soma(a, b) {
-    a = a === undefined ? 0 : a
-    b = b === undefined ? 0 : b
+    a = a === undefined ? 0 : a // Tratamento para caso não seja o parâmetro n seja definido
+    b = b === undefined ? 0 : b // Tratamento para caso não seja o parâmetro n seja definido
     return a + b
 }
 
