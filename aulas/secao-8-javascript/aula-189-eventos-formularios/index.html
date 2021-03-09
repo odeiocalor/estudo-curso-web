@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Eventos - Formulários</title>
+
+    </head>
+
+    <body>
+        
+        <h1>Eventos - Formulários</h1>
+
+        <input onfocus="console.log('recebeu o foco')" onblur="console.log('perdeu o foco')" type="text">
+
+        <select onchange="console.log('Estado foi modificado')" name="" id="">
+            <option value="">-- Selecione --</option>
+            <option value="1">Primeiro opção</option>
+            <option value="2">Segunda opção</option>
+        </select>
+
+        <script src="js/eventos-formularios.js"></script>
+    </body>     
+</html>
