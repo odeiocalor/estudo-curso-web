@@ -1,6 +1,24 @@
 var altura = 0
 var largura = 0
-var vidas = 1
+var vidas = 3
+var tempo = 10
+
+var criaMosquitoTempo = 1500
+
+var nivel = window.location.search
+nivel = nivel.replace('?', '')
+
+switch (nivel) {
+    case 'normal':
+        // 1500
+        criaMosquitoTempo = 1500
+    case 'dificil':
+        // 1000
+        criaMosquitoTempo = 1000
+    case 'hardcore':
+        // 750
+        criaMosquitoTempo = 750
+}
 
 // Função que identifica quando o usuário altera o tamnho da janela do navegador
 function ajustaTamanhoPalcoJogo() {
@@ -11,20 +29,34 @@ function ajustaTamanhoPalcoJogo() {
 // Chamamos a função para determinar os valores de altura e largura
 ajustaTamanhoPalcoJogo()
 
+// Controle do cronômetro
+var cronometro = setInterval(function () {
+
+    tempo -= 1
+
+    if (tempo < 0) {
+        clearInterval(cronometro)
+        clearInterval(criaMosquito)
+        window.location.href = 'vitoria.html'
+    } else {
+        document.getElementById('cronometro').innerHTML = tempo
+    }
+
+}, 1000)
+
 // Função para posicionar a imagem do mosquito em um ponto aleatório da tela
 function posicaoRandomica() {
     // Remover o mosquito anterior (caso exista) antes de criar um novo
     if (document.getElementById('mosquito')) {
         document.getElementById('mosquito').remove()
 
-        if (vidas > 3) {
-            alert('Interromper o jogo(game over)')
+        if (vidas === 0) {
+            window.location.href = 'fim_de_jogo.html'
         } else {
             document.getElementById('v' + vidas).src = "img/coracao_vazio.png"
 
-            vidas++
+            vidas--
         }
-
     }
 
     // Criando coordenadas aleatórias dentro do tamanho da janela

@@ -3,30 +3,68 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Game - Mata Mosquito</title>
+        <title>Mata Mosquito</title>
 
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/game-mata-mosquito.js"></script>
+
+        <script>
+
+            function iniciarJogo() {
+                var nivel = document.getElementById('nivel').value
+
+                if (nivel === '') {
+                    alert('Selecione um nível para iniciar o jogo')
+                    return false
+                }
+
+                window.location.href = 'app.html?' + nivel
+            }
+
+        </script>
+
     </head>
-    <body onresize="ajustaTamanhoPalcoJogo()">
-
-        <div class="painel">
-            <div class="vida">
-                <img src="img/coracao_cheio.png" alt="" id="v1">
-                <img src="img/coracao_cheio.png" alt="" id="v2">
-                <img src="img/coracao_cheio.png" alt="" id="v3">
-
+    <body>
+        
+        <div class="container">
+            <!-- Imagem Game Over -->
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/game.png" alt="Mata mosquito">
+                    </div>
+                </div>
             </div>
-            <div class="cronometro">
-                Tempo restante: ? 
+
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <div class="mt-5 mb-5">
+                            <select name="nivel" id="nivel" class="form-control form-select">
+                                <option value="">-- Selecionar o nível --</option>
+                                <option value="normal">Normal</option>
+                                <option value="dificil">Difícil</option>
+                                <option value="hardcore">Hardcore</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão Iniciar Jogo -->
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()">Iniciar Jogo</button>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <script>
-            setInterval(function() {
-                posicaoRandomica()
-            }, 2000);
-        </script>
-        
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     </body>
 </html>
