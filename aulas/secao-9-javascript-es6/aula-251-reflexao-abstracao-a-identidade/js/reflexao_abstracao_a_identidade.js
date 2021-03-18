@@ -64,9 +64,31 @@ class Cadeira {
     }
 }
 
+class Sofa {
+
+    constructor(qtd_lugares, reclinavel, cor) {
+        this.qtd_lugares = qtd_lugares
+        this.reclinavel = reclinavel
+        this.cor = cor
+    }
+
+    reclinarEncosto() {
+        if (this.reclinavel === true) {
+            console.log('O encosto do sofá foi reclinável')
+        } else {
+            console.log('O sofá não é reclinável')
+        }
+    }
+}
+
 let cadeiras = Array()
+
+let sofa = Array()
+
+sofa.push(new Sofa(3, true, 'cinza'))
 
 cadeiras.push(new Cadeira(4, true, 'preto'))
 cadeiras.push(new Cadeira(4, false, 'marrom'))
 
 console.log(cadeiras)
+console.log(sofa)
