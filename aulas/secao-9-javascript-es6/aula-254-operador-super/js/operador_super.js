@@ -1,3 +1,5 @@
+// O operador super() permite subir para
+
 class Animal {
     constructor(cor, tamanho, peso) {
         this.cor = cor
@@ -12,7 +14,7 @@ class Animal {
 
 class Passaro extends Animal {
     constructor(bico, cor, tamanho, peso) {
-        super('Verde', cor, tamanho, peso)
+        super(cor, tamanho, peso)
         this.bico = bico
     }
 
