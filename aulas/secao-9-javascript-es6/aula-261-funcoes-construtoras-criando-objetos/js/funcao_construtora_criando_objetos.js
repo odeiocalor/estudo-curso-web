@@ -5,16 +5,15 @@ let Carro = function () {
     this._velocidadeMaxima = 180
 
     this.acelerar = function () {
-
         let velocidade = this.getVelocidadeAtual() + 10
         this.setVelocidadeAtual(velocidade)
     }
 
     this.getVelocidadeAtual = function () {
-        return this.velocidadeAtual
+        return this._velocidadeAtual
     }
     this.setVelocidadeAtual = function (velocidadeAtual) {
-        this.velocidadeAtual = velocidadeAtual
+        this._velocidadeAtual = velocidadeAtual
     }
 }
 
