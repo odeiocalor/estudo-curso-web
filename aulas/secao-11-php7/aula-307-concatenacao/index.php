@@ -16,7 +16,12 @@
 			$idade = 20;
 			$hobby = 'jogar videogame';
 
-			echo 'Olá ' . $nome . ', ví que sua cor preferida é ' . $corPreferida . ', estou vendo também que você possui ' . $idade . ' anos e que gosta de ' . $hobby . '.'
+			echo 'Olá ' . $nome . ', ví que sua cor preferida é ' . $corPreferida . ', estou vendo também que você possui ' . $idade . ' anos e que gosta de ' . $hobby . '.';
+
+			echo '<br>';
+			
+			// Aspas duplas
+			echo "Olá $nome, ví que sua cor preferida é $corPreferida, estou vendo também que você possui $idade anos e que gosta de $hobby.";
 
 		?>
 
