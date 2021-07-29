@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1>Selecionando elementos parte 1</h1>
+
+    <div class="diversos2">Div 1</div>
+    <div class="diversos1">Div 2</div>
+
+    <ul>
+      <li>Menu 1 - Item 1</li>
+      <li class="diversos1">Menu 1 - Item 2</li>
+      <li>Menu 1 - Item 3</li>
+    </ul>
+
+    <ul>
+      <li class="itemMenu2">Menu 2 - Item 1</li>
+      <li class="itemMenu2">Menu 2 - Item 2</li>
+      <li class="itemMenu2">Menu 2 - Item 3</li>
+    </ul>
+
+    <input type="text" placeholder="Campo 1" id="input">
+
+    <select class="diversos1">
+      <option>-- Selecione uma opção --</option>
+      <option>Opção 1</option>
+      <option>Opção 2</option>
+    </select>
+
+    <br>
+    
+    <img src="carro.jpg" class="diversos2">
+
+    <script>
+      console.log($('h1'))
+      console.log($('div'))
+      console.log($('.diversos1'))
+      console.log($('.itemMenu2'))
+      console.log($('#input'))
+    </script>
+  </body>
+</html>
