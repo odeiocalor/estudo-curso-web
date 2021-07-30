@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <script>
+    $(document).ready(() => {
+
+      // prepend(), append(), before() e after() adicionam conteúdo ao conteúdo já existente
+      $('#lista1').prepend('<li>Item 0</li>')
+      $('#lista1').append('<li>Item 4</li>')
+
+      $('#lista2').prepend('<div>Item 0</div>')
+      $('#lista2').append('<div>Item 4</div>')
+
+      $('#lista2').before('<p>Eu fui antes após a div</p>')
+      $('#lista2').after('<p>Eu fui inserido após a div</p>')
+
+      $('#linha').after('<p>Eu fui inserido após a linha</p>')
+
+      // html() troca o conteúdo interno existente pelo novo
+      $('#conteudo').html('Conteúdo novo')
+
+      // remove() remove o conteúdo indicado
+      $('#remover').remove()
+      $('.item2').remove()
+
+    })
+  </script>
+  <body>
+
+    <ul id="lista1">
+      <li>Item 1</li>
+      <li class="item2">Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <div id="lista2">
+      <div>Item 1</div>
+      <div class="item2">Item 2</div>
+      <div>Item 3</div>
+    </div>
+
+    <hr id="linha">
+
+    <p id="conteudo">Conteúdo antigo</p>
+
+    <p id="remover">Conteúdo que será removido</p>
+
+  </body>
+  
+</html>
