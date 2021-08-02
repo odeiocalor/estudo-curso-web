@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+		<style>
+			.campo {
+				border: none;
+				padding: 10px;
+			}
+
+			.padrao {
+				background-color: #ddd;
+			}
+
+			.erro {
+				background-color: red;
+			}
+		</style>
+
+		<script>
+			$(document).ready(() => {
+
+				// Adiciona o estilo de forma inline
+				//$('#topo').css('background-color', '#155661').css('margin', '0px').css('padding', '10px 20px 10px 20px')
+				$('#topo').css({ 'background-color': '#155661', 'margin': '0px', 'padding': '10px 20px 10px 20px' })
+
+				$('body').css('margin', '0px')
+
+				$('h1').css({ 'color': '#fff', 'margin': '0px' })
+
+				// Adiciona uma classe pré-existente à um elemento
+				$('input').addClass('campo padrao')
+				$('textarea').addClass('campo erro')
+
+				// Checa se o elemento selecionado tem a classe procurada
+				console.log($('textarea').hasClass('padrao'))
+				if($('textarea').hasClass('erro')) {
+					alert('Há um erro em um dos campos')
+				}
+
+				// Remove a(s) classe(s) inserida(s) caso ela esteja presente(s) no elemento
+				$('textarea').removeClass('erro')
+
+      })
+		</script>
+	</head>
+
+	<body>
+		
+		<div id="topo">
+			<h1>Barra de navegação da aplicação</h1>
+		</div>
+
+		<div>
+			<h3>Contato</h3>
+			<hr />
+
+			<p>Nome:</p>
+			<input type="text" />
+			<br />
+
+			<p>Email:</p>
+			<input type="text" />
+			<br />
+
+			<p>Mensagem:</p>
+			<textarea></textarea>
+			<br />
+
+			<button type="button">Enviar</button>
+		</div>
+	</body>
+
+</html>
