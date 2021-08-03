@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+		<style>
+			.desfocado {
+				background-color: white;
+			}
+
+			.focado {
+				background-color: green;
+			}
+		</style>
+
+		<script>
+			$(document).ready(() => {
+
+				$('body').on('focus', 'input', e => {
+					$(e.target).removeClass('desfocado')
+					$(e.target).addClass('focado')
+				})
+
+				$('body').on('blur', 'input', e => {
+					$(e.target).removeClass('focado')
+					$(e.target).addClass('desfocado')
+				})
+
+				// Descomentar para ver o efeito de off
+				//$('body').off('blur', 'input')
+
+      })
+		</script>
+	</head>
+
+	<body>
+		
+		<input type="text" class="desfocado">
+
+	</body>
+
+</html>
