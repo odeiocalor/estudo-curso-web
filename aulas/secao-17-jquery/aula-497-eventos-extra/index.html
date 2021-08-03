@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+		<style>
+			#div1 {
+				width: 80px;
+				height: 80px;
+				border: solid 1px #000;
+			}
+
+			.emDestaque {
+				background-color: red;
+			}
+		</style>
+
+		<script>
+			$(document).ready(() => {
+
+				$('#btn2').on('click', () => {
+					alert('BTN 2 clicado')
+				})
+				
+				$('#btn1').on('click', () => {
+					$('#btn2').trigger('click')
+				})
+
+				/*
+				$('#div1').on('mouseenter', e => {
+					$(e.target).addClass('emDestaque')
+				})
+
+				$('#div1').on('mouseleave', e => {
+					$(e.target).removeClass('emDestaque')
+				})
+				*/
+
+				$('#div1').hover(
+					e => $(e.target).toggleClass('emDestaque'),
+				)
+
+      })
+		</script>
+	</head>
+
+	<body>
+		
+		<button type="button" id="btn1">BTN 1</button>
+		<button type="button" id="btn2">BTN 2</button>
+
+		<hr>
+
+		<div id="div1"></div>
+
+	</body>
+
+</html>
