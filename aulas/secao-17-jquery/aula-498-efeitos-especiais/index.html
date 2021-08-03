@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+
+		<style>
+			button {
+				margin-bottom: 5px;
+				width: 100px;
+			}
+
+			.div {
+				width: 100px;
+				height: 100px;
+			}
+
+			.div1 {
+				background-color: red
+			}
+
+			.div2 {
+				background-color: green
+			}
+
+			.div3 {
+				background-color: blue
+			}
+
+			.grupo {
+				padding: 25px;
+				float: left
+			}
+		</style>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(() => {
+				
+				// Podem receber os paramêtros 'slow', 'medio', 'fast' ou um valor numérico que serão os milisegundos que demorará para concluir a animação
+				// Irá esconder o elemento
+				//$('#div1').hide()
+
+				// Irá exibir o elemento
+				//$('#div1').show()
+
+				// Irá esconder ou mostrar o elemento baseado no estado atual do mesmo
+				//$('#div1').toggle()
+
+				// Irá aplicar um efeito de fade out no elemento
+				//$('#div2').fadeOut('slow')
+
+				// Irá aplicar um efeito de fade in no elemento
+				//$('#div2').fadeIn('slow')
+
+				// Irá aplicar um efeito de fade in/out no elemento baseado no estado atual do mesmo
+				//$('#div2').fadeToggle('slow')
+
+				// Recebe como segundo paramêtro a opacidade com a qual o elemento deve ficar
+				//$('#div2').fadeTo('slow', 0.3)
+
+				// Irá esconder o elemento deslizando-o para cima
+				//$('#div3').slideUp('slow')
+
+				// Irá exibir o elemento deslizando-o para baixo
+				//$('#div3').slideDown('slow')
+
+				// Irá esconder ou mostrar o elemento baseado no estado atual do mesmo
+				//$('#div3').slideToggle('slow')
+
+				$('#btn1').on('click', () => {
+					$('#div1').toggle('slow')
+				})
+
+				$('#btn2').on('click', () => {
+					$('#div2').fadeToggle(2000)
+				})
+
+				$('#btn3').on('click', () => {
+					$('#div3').slideToggle(2000)
+				})
+				
+			})
+		</script>
+	</head>
+
+	<body>
+		
+		<div class="grupo">
+			<button id="btn1" type="button">DIV 1</button>
+			<div id="div1" class="div div1"></div>
+		</div>
+
+		<div class="grupo">
+			<button id="btn2" type="button">DIV 2</button>
+			<div id="div2" class="div div2"></div>
+		</div>
+
+		<div class="grupo">
+			<button id="btn3" type="button">DIV 3</button>
+			<div id="div3" class="div div3"></div>
+		</div>
+			
+	</body>
+
+</html>
